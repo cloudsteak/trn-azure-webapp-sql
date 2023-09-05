@@ -1,11 +1,13 @@
 const sql = require('mssql');
+require('dotenv').config() 
+console.log(process.env.DB_USER)
 
 const config = {
-    user: 'adatgazda', // better stored in an app setting such as process.env.DB_USER
-    password: 'zwSE)xZJCWgvXXxu', // better stored in an app setting such as process.env.DB_PASSWORD
-    server: 'trn-azure-sql-01.database.windows.net', // better stored in an app setting such as process.env.DB_SERVER
-    port: 1433, // optional, defaults to 1433, better stored in an app setting such as process.env.DB_PORT
-    database: 'webshop', // better stored in an app setting such as process.env.DB_NAME
+    user: process.env.DB_USER, 
+    password: process.env.DB_PASSWORD,
+    server: process.env.DB_SERVER, 
+    port: 1433, 
+    database: process.env.DB_NAME, 
     authentication: {
         type: 'default'
     },
@@ -13,34 +15,6 @@ const config = {
         encrypt: true
     }
 }
-
-/*
-    //Use Azure VM Managed Identity to connect to the SQL database
-    const config = {
-        server: process.env["db_server"],
-        port: process.env["db_port"],
-        database: process.env["db_database"],
-        authentication: {
-            type: 'azure-active-directory-msi-vm'
-        },
-        options: {
-            encrypt: true
-        }
-    }
-
-    //Use Azure App Service Managed Identity to connect to the SQL database
-    const config = {
-        server: process.env["db_server"],
-        port: process.env["db_port"],
-        database: process.env["db_database"],
-        authentication: {
-            type: 'azure-active-directory-msi-app-service'
-        },
-        options: {
-            encrypt: true
-        }
-    }
-*/
 
 console.log("Starting...");
 connectAndQuery();
