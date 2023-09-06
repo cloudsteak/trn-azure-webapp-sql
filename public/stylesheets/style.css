@@ -3,6 +3,72 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+h1{
+  color: whitesmoke;
+  padding-bottom: 1em;
+}
+
 a {
   color: #00B7FF;
 }
+
+body {
+  background-image: url('/images/laptop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.4);
+  background-blend-mode: overlay;
+}
+
+#bodyDiv {
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  padding: 0px;
+  margin: 0px;
+  color: rgb(33, 33, 33);
+}
+
+table {
+  text-align: left !important;
+  margin-left: 10%;
+  width: 80vw;
+  font-size: x-large;
+  background-color: rgba(240, 248, 255, 0.501);
+  border: none;
+  border-radius: 10px;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #00bec1b5;
+  color: whitesmoke;
+}
+
+th {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+tr:hover,
+tbody tr:nth-child(odd):hover {
+  background-color: rgba(0, 0, 0, 0.642);
+  color: whitesmoke;
+}
+
+td{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+p {
+  color: rgb(255, 70, 86);
+  background-color: black;
+  font-size: 16px;
+  padding-left: 10%;
+  padding-right: 10%;
+  border-radius: 15px;
+}
+

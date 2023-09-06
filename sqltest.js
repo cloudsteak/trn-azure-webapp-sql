@@ -1,21 +1,26 @@
 const sql = require('mssql');
-require('dotenv').config() 
-console.log(process.env.DB_USER)
+require('dotenv').config()
+//dotenv.config({ path: `.env.${process.env.NODE_ENV}`, debug: true });
+
+const server = process.env.DB_SERVER;
+const user = process.env.DB_USER;
+const password = process.env.DB_PASSWORD
+const database = process.env.DB_NAME;
+const port = parseInt(process.env.DB_PORT);
 
 const config = {
-    user: process.env.DB_USER, 
-    password: process.env.DB_PASSWORD,
-    server: process.env.DB_SERVER, 
-    port: 1433, 
-    database: process.env.DB_NAME, 
+    server: server,
+    user: user,
+    password: password,
+    port: port,
+    database: database,
     authentication: {
         type: 'default'
     },
     options: {
-        encrypt: true
+      encrypt: true
     }
-}
-
+  }
 console.log("Starting...");
 connectAndQuery();
 

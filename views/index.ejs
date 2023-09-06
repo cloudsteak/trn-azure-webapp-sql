@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <div id="bodyDiv">
+    <h1>
+      <%= title %>
+    </h1>
+    <p><%= error %></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Termék neve</th>
+          <th>Kategória</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% data.forEach(item=> { %>
+          <tr>
+            <td>
+              <%= item.ProductName %>
+            </td>
+            <td>
+              <%= item.CategoryName %>
+            </td>
+          </tr>
+          <% }); %>
+      </tbody>
+    </table>
+
+
+  </div>
+</body>
+
 </html>
