@@ -1,6 +1,4 @@
-# trn-azure-webapp-sql
-
-WebApp + SQL adatbázis - Azure
+# WebApp + SQL adatbázis - Azure
 
 ## 1. Adatbázis létrehozás
 
@@ -143,7 +141,7 @@ VALUES (2, 'MacBook Pro M2 Pro')
 | DB_PASSWORD | <jelszó amit az adatbázis felhasználóhoz megadtál> |
 | DB_SERVER   | <SQL szerver kiszolgálóneve>                       |
 | DB_NAME     | webshop                                            |
-| DB_PORT   | 1433                      |
+| DB_PORT     | 1433                                               |
 
 5. Mentés
 
