@@ -146,3 +146,7 @@ VALUES (2, 'MacBook Pro M2 Pro')
 | DB_PORT   | 1433                      |
 
 5. Mentés
+
+## 6. Alkalmazás tesztelése
+
+https://<webalkalmazásom neve>.azurewebsites.net
