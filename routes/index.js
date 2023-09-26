@@ -4,6 +4,9 @@ var router = express.Router();
 const sql = require('mssql');
 require('dotenv').config()
 
+var os = require("os");
+var hostname = os.hostname();
+
 const server = process.env.DB_SERVER;
 const user = process.env.DB_USER;
 const password = process.env.DB_PASSWORD
@@ -38,7 +41,7 @@ router.get('/', async (req, res) => {
     ORDER BY ProductName`);
     //res.json(result.recordset);
     const data = result.recordset;
-    res.render('index', { title: "Termék katalógus (Azure WebApp + SQL)", error: "", data });
+    res.render('index', { title: "Termék katalógus (Azure WebApp + SQL)", error: "", data, hostname: hostname });
     closeConnection();
 
   } catch (err) {

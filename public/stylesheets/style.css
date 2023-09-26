@@ -3,7 +3,8 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-h1{
+h1,
+h3 {
   color: whitesmoke;
   padding-bottom: 1em;
 }
@@ -58,7 +59,7 @@ tbody tr:nth-child(odd):hover {
   color: whitesmoke;
 }
 
-td{
+td {
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -71,4 +72,3 @@ p {
   padding-right: 10%;
   border-radius: 15px;
 }
-
