@@ -77,7 +77,7 @@ INSERT INTO dbo.Product(productcategoryid, name)
 VALUES (1, 'Windows 10')
 
 INSERT INTO dbo.Product(productcategoryid, name)
-VALUES (1, 'MacOS 16')
+VALUES (1, 'MacOS 13')
 
 INSERT INTO dbo.Product(productcategoryid, name)
 VALUES (1, 'Ubuntu 22.04')
