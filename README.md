@@ -6,7 +6,7 @@
 2. [Adatstruktúra létrehozása](#2-adatstruktúra-létrehozása)
 3. [Webalkalmazás futtatása - helyileg](#3-webalkalmazás-futtatása---helyileg)
 4. [Webalkalmazás futtatása - Azure](#4-webalkalmazás-futtatása---azure)
-5. [SQL kapcsolat beállítása a Webalkalmazásban](#5-sql-kapcsolat-beállítása-a-webalkalmásban)
+5. [SQL kapcsolat beállítása a Webalkalmazásban](#5-sql-kapcsolat-beállítása-a-webalkalmazásban)
 6. [Alkalmazás tesztelése](#6-alkalmazás-tesztelése)
 
 ## 1. Adatbázis létrehozás
