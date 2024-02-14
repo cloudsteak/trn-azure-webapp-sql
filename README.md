@@ -15,7 +15,7 @@
      - Hitelesítési mód: `SQL- és Azure Active Directory-hitelesítés használata`
      - Azure AD rendszergazda beállításánál válasszuk ki a felhasználónkat
      - Kiszolgáló rendszergazdájának felhasználóneve: `adatgazda`
-     - Jelszónál generáljunk valami erős jelszót [itt](https://delinea.com/resources/password-generator-it-tool). (Pl.: `FA+Hb#Tb8dLsUdac8UVesY(8`)
+     - Jelszónál generáljunk valami erős jelszót [itt](https://delinea.com/resources/password-generator-it-tool). (Pl.: `FA+Hb#Tb8dLsUdac8UVesY*8`)
    - Szeretne rugalmas SQL-készletet használni?: `Nem`
    - Számítási feladat környezete: `Fejlesztés`
 5. `Következő: Hálózatkezelés >`
