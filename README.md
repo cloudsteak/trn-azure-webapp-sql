@@ -120,7 +120,7 @@ VALUES (2, 'MacBook Pro M2 Pro')
    - Erőforráscsoport: `webalkalmazasok`
    - Név (Egyedinek kell lennie): `mywebshop`
    - Közzététel: `Kód`
-   - Futtatókötnyezet verme: `Node 18 LTS`
+   - Futtatókötnyezet verme: `Node 20 LTS`
    - Operációs rendszer: `Linux`
    - Régió: `north-europe`
    - Linux-csomagnál válasszunk egy létezőt vagy hozzunk létre újat

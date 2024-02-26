@@ -50,7 +50,7 @@ router.get('/', async (req, res) => {
     const data = [
       { ProductName: "", CategoryName: "" }
     ];
-    res.render('index', { title: "Termék katalógus (Azure WebApp + SQL)", error: "Adatbázis hiba", data });
+    res.render('index', { title: "Termék katalógus (Azure WebApp + SQL)", error: "Adatbázis hiba", data, hostname: hostname });
     closeConnection();
   }
   
